@@ -1,0 +1,75 @@
+{
+  "objective": "wgan_gp",
+  "config": {
+    "epochs": 5,
+    "batch_size": 128,
+    "batches_per_epoch": 469,
+    "optimizer": "Adam",
+    "lr": 0.0001,
+    "betas": [
+      0.0,
+      0.9
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0,
+    "latent_dim": 100,
+    "critic_steps_per_generator_step": 3,
+    "gp_weight": 10.0,
+    "seed": 42,
+    "fixed_noise_seed": 142,
+    "train_noise_seed": 143,
+    "interpolation_seed": 144
+  },
+  "history": [
+    {
+      "critic_loss": -7.807646964200338,
+      "critic_gap": 9.66480869439443,
+      "gradient_penalty": 0.18571617435018997,
+      "generator_loss": -2.171801172513276,
+      "epoch": 1,
+      "critic_updates": 469,
+      "generator_updates": 156,
+      "seconds": 4.041851199988741
+    },
+    {
+      "critic_loss": -9.763805329386393,
+      "critic_gap": 11.734473591105143,
+      "gradient_penalty": 0.19706682603359224,
+      "generator_loss": -2.1713142090309887,
+      "epoch": 2,
+      "critic_updates": 469,
+      "generator_updates": 156,
+      "seconds": 4.033841000011307
+    },
+    {
+      "critic_loss": -5.873743251546224,
+      "critic_gap": 6.69994365234375,
+      "gradient_penalty": 0.0826200408379237,
+      "generator_loss": -1.20638172949948,
+      "epoch": 3,
+      "critic_updates": 469,
+      "generator_updates": 157,
+      "seconds": 3.9566092000022763
+    },
+    {
+      "critic_loss": -9.03028678080241,
+      "critic_gap": 10.516315055338541,
+      "gradient_penalty": 0.14860282487869264,
+      "generator_loss": 11.47306921848884,
+      "epoch": 4,
+      "critic_updates": 469,
+      "generator_updates": 156,
+      "seconds": 3.7908267000020714
+    },
+    {
+      "critic_loss": -10.43935970662435,
+      "critic_gap": 12.384638651529949,
+      "gradient_penalty": 0.19452789414723715,
+      "generator_loss": 17.469501281395935,
+      "epoch": 5,
+      "critic_updates": 469,
+      "generator_updates": 156,
+      "seconds": 3.721158300002571
+    }
+  ]
+}

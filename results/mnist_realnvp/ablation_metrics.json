@@ -1,0 +1,92 @@
+{
+  "ablation_reference": {
+    "config": {
+      "epochs": 3,
+      "peak_lr": 0.0005,
+      "batch_size": 128,
+      "hidden_channels": 64,
+      "residual_blocks": 2,
+      "couplings": 16,
+      "trainable_parameters": 4882778,
+      "optimizer": "Adam",
+      "warmup_steps": 500,
+      "final_lr_fraction": 0.02,
+      "max_grad_norm": 10.0,
+      "seed": 42,
+      "validation_noise_seed": 43
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_bpd": 4.749342949936607,
+        "val_bpd": 2.9775926892280578,
+        "last_lr": 0.00043,
+        "skipped_steps": 0,
+        "seconds": 112.79888180000125
+      },
+      {
+        "epoch": 2,
+        "train_bpd": 2.3781424848643216,
+        "val_bpd": 2.0050409415245056,
+        "last_lr": 0.0002889902053373218,
+        "skipped_steps": 0,
+        "seconds": 120.63659490000282
+      },
+      {
+        "epoch": 3,
+        "train_bpd": 1.89545001411438,
+        "val_bpd": 1.8511970964431763,
+        "last_lr": 1e-05,
+        "skipped_steps": 0,
+        "seconds": 123.47677539999131
+      }
+    ],
+    "best_epoch": 3,
+    "best_val_bpd": 1.8511970964431763
+  },
+  "ablation_low_lr": {
+    "config": {
+      "epochs": 3,
+      "peak_lr": 5e-05,
+      "batch_size": 128,
+      "hidden_channels": 64,
+      "residual_blocks": 2,
+      "couplings": 16,
+      "trainable_parameters": 4882778,
+      "optimizer": "Adam",
+      "warmup_steps": 500,
+      "final_lr_fraction": 0.02,
+      "max_grad_norm": 10.0,
+      "seed": 42,
+      "validation_noise_seed": 43
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_bpd": 6.5321780636440625,
+        "val_bpd": 5.560261603450775,
+        "last_lr": 4.3e-05,
+        "skipped_steps": 0,
+        "seconds": 131.96461439999985
+      },
+      {
+        "epoch": 2,
+        "train_bpd": 4.368161712490428,
+        "val_bpd": 3.7887201955795287,
+        "last_lr": 2.889902053373218e-05,
+        "skipped_steps": 0,
+        "seconds": 104.43848640000215
+      },
+      {
+        "epoch": 3,
+        "train_bpd": 3.6548591772946444,
+        "val_bpd": 3.607075933265686,
+        "last_lr": 1.0000000000000002e-06,
+        "skipped_steps": 0,
+        "seconds": 101.69575379999878
+      }
+    ],
+    "best_epoch": 3,
+    "best_val_bpd": 3.607075933265686
+  }
+}

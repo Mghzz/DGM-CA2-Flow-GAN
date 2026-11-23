@@ -1,0 +1,34 @@
+% Compile with XeLaTeX.
+% This is the only file to compile.
+\documentclass{dgm-homework}
+
+% مشخصات هر تمرین را در این قسمت تغییر دهید.
+\DGMSetup{
+  course = {مدل‌های مولد عمیق},
+  homework = {۱},
+  instructor = {دکتر مصطفی توسلی‌پور},
+  student = {[نام و نام خانوادگی]},
+  student-id = {۸۱۰۱۰۰۰۰۰},
+  submission-date = {۱۴۰۵/۰۷/۲۴},
+  semester = {نیم‌سال اول ۱۴۰۵}
+}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+% برای افزودن سوال، یک پوشه و فایل جدید بسازید و اینجا اضافه کنید.
+\input{problems/question1/question1.tex}
+\input{problems/question2/question2.tex}
+
+% اگر مرجعی ندارید، این محیط را حذف کنید.
+\begin{thebibliography}{9}
+  \bibitem{tomczak2018vampprior}
+  J.~Tomczak and M.~Welling, ``VAE with a VampPrior,'' in \emph{International Conference on Artificial Intelligence and Statistics (AISTATS)}, PMLR 84, pp.~1214--1223, 2018.
+
+  \bibitem{kingma2013auto}
+  D.~P.~Kingma and M.~Welling, ``Auto-encoding variational Bayes,'' in \emph{International Conference on Learning Representations (ICLR)}, 2014.
+\end{thebibliography}
+
+\end{document}

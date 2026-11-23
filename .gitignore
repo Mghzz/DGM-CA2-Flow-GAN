@@ -1,0 +1,40 @@
+# Python environments and caches
+/.venv/
+/venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Local environment settings
+.env
+.env.*
+!.env.example
+
+# Downloaded datasets and model weights
+/data/
+/results/**/*.pt
+/results/**/*.pth
+/results/**/*.ckpt
+/results/**/*.safetensors
+/results/**/*.tmp
+
+# LaTeX build intermediates
+/DGM_Report_Template/**/*.aux
+/DGM_Report_Template/**/*.bbl
+/DGM_Report_Template/**/*.bcf
+/DGM_Report_Template/**/*.blg
+/DGM_Report_Template/**/*.fls
+/DGM_Report_Template/**/*.fdb_latexmk
+/DGM_Report_Template/**/*.log
+/DGM_Report_Template/**/*.out
+/DGM_Report_Template/**/*.run.xml
+/DGM_Report_Template/**/*.synctex.gz
+/DGM_Report_Template/**/*.toc
+
+# OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
